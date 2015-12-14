@@ -1,7 +1,6 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This website will hopefully help craftspeople/artisans overcome the tech gap.
 
 Things you may want to cover:
 
