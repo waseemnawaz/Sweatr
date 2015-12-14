@@ -2,13 +2,55 @@
 <html>
 <head>
   <title>Sweatr</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<body data-spy="scroll" data-target=".navbar">
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse"
+          data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="Home navbar-brand">
+            <a href="#">SWEATR</a>
+          </div> <!--end projectName -->
+        </div> <!--end navbar-header -->
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about">About</a></li>
+            <li class="dropdown">
+              <a href="#" data-toggle="dropdown" class="dropdown-toggle">Work <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#work1">Work1</a></li>
+                  <li><a href="#work2">Work2</a></li>
+                </ul>
+              </li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div><!--nav-->
+      </div><!--end nav container-->
+    </nav> <!-- end navbar-->
+    <div class="page-wrap>"
+<h1>Welcome to Sweatr</h1>
+<h2>Your source for fair trade sweaters and assorted handmade knitwear from Peru.</h2>
+</div><!--page-wrap-->
 
 <%= yield %>
-
+<footer class="site-footer">
+  I'm the Sticky Footer.
+</footer>
 </body>
 </html>
