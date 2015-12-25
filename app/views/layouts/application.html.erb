@@ -24,12 +24,16 @@
             <span class="icon-bar"></span>
           </button>
           <div class="Home navbar-brand">
-            <a href="#">SWEATR</a>
+            <!--a href="#">SWEATR</a-->
+            <%= link_to "SWEATR", static_pages_index_path %>
           </div> <!--end projectName -->
         </div> <!--end navbar-header -->
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#about">About</a></li>
+            <li><%= link_to "About Us", static_pages_about_path %></li>
+            <li><%= link_to "Contact Us", static_pages_contact_path %></li>
+            <li><%= link_to "Products", products_path %></li>
+            <!--li><a href="#about">About</a></li>
             <li class="dropdown">
               <a href="#" data-toggle="dropdown" class="dropdown-toggle">Work <b class="caret"></b></a>
                 <ul class="dropdown-menu">
@@ -38,7 +42,14 @@
                 </ul>
               </li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#faq">FAQ</a></li-->
+            <li><%= form_tag("/products", class: "navbar-form navbar-right", method: "get") do %>
+              <div class="form-group">
+              <%#= label_tag(:q, "Search for:", class: "form-control") %>
+              <%= text_field_tag(:q, nil, class: "form-control", placeholder: "Enter data here") %>
+              </div>
+              <%= submit_tag("Search", class: "btn btn-default") %></li>
+            <% end %>
           </ul>
         </div><!--nav-->
       </div><!--end nav container-->

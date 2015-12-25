@@ -30,6 +30,10 @@ p {
 	color: white;
 }
 
+/*** form_tag ***/
+
+
+
 /*** index pic ***/
 
 .my-image {
@@ -64,5 +68,21 @@ html, body {
  .listing {
  	text-align: center;
  }
+
+/*** NewEdit form ***/
+
+#newedit {
+	margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    max-width: 300px;
+    position: relative;
+}
+
+/*.something {
+	font-family: Tahoma;
+}*/
 
  
