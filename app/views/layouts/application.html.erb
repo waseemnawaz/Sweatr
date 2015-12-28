@@ -63,8 +63,14 @@
         </div><!--nav-->
       </div><!--end nav container-->
     </nav> <!-- end navbar-->
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>    
+<!--p class="notice"><%#= notice %></p-->
+<% if notice %>
+    <p id="notice" class="alert alert-info"><%= notice %></p>
+<% end %>
+<!--p class="alert"><%#= alert %></p-->
+<% if alert %>
+    <p id="alert" class="alert alert-danger"><%= alert %></p>
+<% end %>    
 <h1 class="welcome">Welcome to Sweatr</h1>
 <h2>Your source for fair trade sweaters and assorted handmade knitwear from Peru.</h2>
 
