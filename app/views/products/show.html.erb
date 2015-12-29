@@ -28,14 +28,15 @@
 		<h4>
   			<span class="glyphicon glyphicon-pencil" aria-hidden="true"><strong>Colour:</strong></span>
   			<%= @product.colour %>
-  			<!--p>Average Rating: <div class="rated" data-score="<%#= @product.average_rating %>"></div> </p-->
+  			<p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
 		</h4>
 	</div>
 </div>
 </div>
 
-<%#= render 'comments' %>
-<%#= render 'new_comment' %>
+
+<%= render 'new_comment' %>
+<%= render 'comments' %>
 <%#= render 'all_comments' %>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |

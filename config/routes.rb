@@ -2,8 +2,12 @@ Rails.application.routes.draw do
   
   devise_for :users, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout'}
   #devise_for :users
+  
+  #resources :products
+  resources :products do
+    resources :comments
+  end
   resources :users
-  resources :products
   resources :orders, only: [:index, :show, :create, :destroy]
   get 'static_pages/about'
 
