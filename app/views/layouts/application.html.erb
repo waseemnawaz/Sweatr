@@ -2,14 +2,12 @@
 <html>
 <head>
   <title>Sweatr</title>
-  <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"-->
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <!--script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= csrf_meta_tags %>
 </head>
-<body>
+<!--body-->
 	<body data-spy="scroll" data-target=".navbar">
     <!-- Main jumbotron for a primary marketing message or call to action -->
     
@@ -23,8 +21,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <div class="Home navbar-brand">
-            <!--a href="#">SWEATR</a-->
+          <div class="Home navbar-brand logoz">
             <%= link_to "SWEATR", static_pages_index_path %>
           </div> <!--end projectName -->
         </div> <!--end navbar-header -->
@@ -33,54 +30,42 @@
             <li><%= link_to "About Us", static_pages_about_path %></li>
             <li><%= link_to "Contact Us", static_pages_contact_path %></li>
             <li><%= link_to "Products", products_path %></li>
-            <li><%= link_to "Carousel", static_pages_landing_page_path %></li>
-            <!--li><a href="#about">About</a></li>
-            <li class="dropdown">
-              <a href="#" data-toggle="dropdown" class="dropdown-toggle">Work <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#work1">Work1</a></li>
-                  <li><a href="#work2">Work2</a></li>
-                </ul>
-              </li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#faq">FAQ</a></li-->
             <li><%= form_tag("/products", class: "navbar-form navbar-right", method: "get") do %>
               <div class="form-group">
               <%#= label_tag(:q, "Search for:", class: "form-control") %>
               <%= text_field_tag(:q, nil, class: "form-control", placeholder: "Enter data here") %>
               </div>
-              <%= submit_tag("Search", class: "btn btn-default") %></li>
-            <% end %>
-            <ul class="nav pull-right">
-              <li>
+              <%= submit_tag("Search", class: "btn btn-default") %>
+            </li>
+              <% end %>
+            <li>
               <% if user_signed_in? %>
                 <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
               <% else %>
                 <%= link_to('Login', new_user_session_path) %>
               <% end %>
-              </li>
-            </ul>
+            </li>
           </ul>
         </div><!--nav-->
       </div><!--end nav container-->
     </nav> <!-- end navbar-->
-<!--p class="notice"><%#= notice %></p-->
-<% if notice %>
+  <!--p class="notice"><%#= notice %></p-->
+  <% if notice %>
     <p id="notice" class="alert alert-info"><%= notice %></p>
-<% end %>
-<!--p class="alert"><%#= alert %></p-->
-<% if alert %>
+  <% end %>
+  <!--p class="alert"><%#= alert %></p-->
+  <% if alert %>
     <p id="alert" class="alert alert-danger"><%= alert %></p>
-<% end %>    
-<h1 class="welcome">Welcome to Sweatr</h1>
-<h2>Your source for fair trade sweaters and assorted handmade knitwear from Peru.</h2>
+  <% end %>    
 
+  <h1 class="welcome">Welcome to Sweatr</h1>
+  <h2>Your source for fair trade sweaters and assorted handmade knitwear from Peru.</h2>
 
-<%= yield %>
-<div class="page-wrap">
-</div><!--page-wrap-->
-<footer class="site-footer">
-  I'm the Sticky Footer.
-</footer>
+  <div class="page-wrap">
+  <%= yield %>
+  </div><!--page-wrap-->
+  <footer class="site-footer">
+    I'm the Sticky Footer.
+  </footer>
 </body>
 </html>
