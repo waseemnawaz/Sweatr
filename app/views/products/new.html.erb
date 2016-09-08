@@ -1,6 +1,8 @@
+<div class="container anchor">
 <h1>New Product</h1>
-
-<%= render 'form' %>
+<% if signed_in? && current_user.admin? %>
+<%= render 'form' %><% end %>
 
 <%= link_to 'Back', products_path %>
-<%= link_to 'Contact Us', static_pages_contact_path %>
+</div>
+<%#= link_to 'Contact Us', static_pages_contact_path %>
