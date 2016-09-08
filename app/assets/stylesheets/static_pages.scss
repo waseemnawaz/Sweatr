@@ -169,11 +169,15 @@ html, body {
   color: black;
 }
 
- /*** Index page ***/
+ /*** Product Index page ***/
 
  .listing {
  	text-align: center;
  }
+
+ .portfolio-item {
+    margin-bottom: 25px;
+}
 
 /*** NewEdit form ***/
 
@@ -193,10 +197,10 @@ html, body {
 
 /*** Contact form ***/
 
-.contactform {
+/*.contactform {
 	width: 700px;
 	margin: 0 auto;
-}
+}*/
 
 /*** login page ***/
 
@@ -250,13 +254,13 @@ html, body {
 
 /*** img-responsive pics ***/
 
-.img-responsive {
+/*.img-responsive {
   max-width: 100%;
   height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
+}*/
 
 /*** new-comment page ***/
 
