@@ -2,29 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.welcome {
-	padding-top: 100px;
-}
-
-body {
+/*body {
   padding-top: 61px;
-}
-
-/*** Nav bar ***/
-
-/*.nav {
-	z-index: 1;
-}
-
-.nav li {
-	display: inline-block;	
-	height: 100%;
-	margin-right: 40px;
-}
-
-.Home a {
-	text-decoration: none;
-	color: white;
 }*/
 
 /*** Navigation bar typography ***/
@@ -44,7 +23,7 @@ body {
 }
 
 .navbar-inverse {
-  font-family: Courier New, Lucida Sans Typewriter, Verdana, sans-serif;
+  font-family: Trebuchet MS, Courier New, Lucida Sans Typewriter, Verdana, sans-serif;
   font-size: 1.3em;
   font-weight: bold;
 }
@@ -54,7 +33,7 @@ body {
 }
 
 .Home a {
-  font-family: Courier New, Lucida Sans Typewriter, Verdana, sans-serif;
+  font-family: Trebuchet MS, Courier New, Lucida Sans Typewriter, Verdana, sans-serif;
   color: black;
   font-size: 1.5em;
   text-decoration: none;
@@ -85,11 +64,26 @@ body {
   padding-top: 80px;
 }
 
-/*** form_tag ***/
+/**** landing page ****/
 
+.welcome {
+  text-align: center;
+}
 
+.welcome {
+  font-family: Trebuchet MS, Courier New, Lucida Sans Typewriter, Verdana, sans-serif;
+  color: black;
+}
 
-/*** index pic ***/
+.welcome h1 {
+  font-size: 3em;
+}
+
+.welcome p {
+  font-size: 1.5em;
+}
+
+/*** index ***/
 
 .my-image {
 	margin: auto;
@@ -118,6 +112,21 @@ html, body {
 .site-footer {
   background-color: rgb(222, 216, 216);
 }
+
+.site-footer {
+  margin-top: 5em;
+  padding-top: 5em; 
+}
+
+.copyright {
+  text-align: center;
+}
+
+.copyright {
+  font-family: Trebuchet MS, Courier New, Lucida Sans Typewriter, Verdana, sans-serif;
+  color: black;
+}
+
  /*** Index page ***/
 
  .listing {
