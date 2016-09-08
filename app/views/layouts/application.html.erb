@@ -28,8 +28,8 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><%= link_to "About Us", static_pages_about_path %></li>
-            <li><%= link_to "Contact Us", static_pages_contact_path %></li>
             <li><%= link_to "Products", products_path %></li>
+            <li><%= link_to "Contact Us", static_pages_contact_path %></li>
             <li><%= form_tag("/products", class: "navbar-form navbar-right", method: "get") do %>
               <div class="form-group">
               <%#= label_tag(:q, "Search for:", class: "form-control") %>

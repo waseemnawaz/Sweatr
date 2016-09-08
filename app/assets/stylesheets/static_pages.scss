@@ -83,10 +83,52 @@
   font-size: 1.5em;
 }
 
-/*** index ***/
+/*** About page ***/
 
-.my-image {
-	margin: auto;
+.about {
+  text-align: center;
+}
+
+.about {
+  font-family: Trebuchet MS, Courier New, Lucida Sans Typewriter, Verdana, sans-serif;
+  color: black;
+}
+
+.about h1 {
+  font-size: 3em;
+}
+
+.about p {
+  font-size: 1.5em;
+}
+
+/**** Contact page ****/
+
+.contactus {
+  text-align: center;
+}
+
+.contactus {
+  font-family: Trebuchet MS, Courier New, Lucida Sans Typewriter, Verdana, sans-serif;
+  color: black;
+}
+
+.contactus h1 {
+  font-size: 3em;
+}
+
+.contactus p {
+  font-size: 1.5em;
+}
+
+#faque {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5em;
+}
+
+.form-group {
+  text-align: left;
 }
 
 /*** Sticky footer ***/
