@@ -1,14 +1,14 @@
 
 <% @products.each do |product| %>
   <div class="col-md-4">
-    <h1><a href="<%= product_path(product) %>"><%= product.name %></a></h1>
-    <p><%= product.description %></p>
+    <h1><a href="<%= product_path(product) %>"><%= product.name %></a></h1> 
     <p><%= product.colour %></p>
     <p><a href="<%= product_path(product) %>"><%= image_tag(product.image_url, class: "img-responsive") %></a></p>
+    <p><%= product.description %></p>
     <!--p><%#= link_to 'Show', product %></p-->
     <p><% if signed_in? && current_user.admin? %><%= link_to 'Edit', edit_product_path(product) %><% end %></p>
     <p><% if signed_in? && current_user.admin? %><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %><% end %></p>
-   </div><!-- /col -->
+  </div><!-- /col -->
  <% end %>
 
  

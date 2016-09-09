@@ -2,10 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-/*body {
-  padding-top: 61px;
-}*/
-
 /*** Navigation bar typography ***/
 
 .navbar-inverse .navbar-nav>li>a:hover {
@@ -131,6 +127,12 @@
   text-align: left;
 }
 
+#faque {
+  background-image: image_url("IMG_7612.jpg");
+  background-size: cover;
+  height: 50em;
+}
+
 /*** Sticky footer ***/
 
 * {
@@ -198,7 +200,7 @@ html, body {
 
 /*** NewEdit form ***/
 
-#newedit {
+/*#newedit {
 	margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
@@ -206,22 +208,41 @@ html, body {
     text-align: center;
     max-width: 300px;
     position: relative;
+}*/
+
+/**** Login page ****/
+.loginz {
+  margin-top: 5em;
 }
 
-/*.something {
-	font-family: Tahoma;
-}*/
+.loginn {
+  text-align: center;
+  max-width: 250px;
+  margin: 0 auto;
+  padding: 15px;
+}
 
-/*** Contact form ***/
+.renderone {
+  text-align: left;
+}
 
-/*.contactform {
-	width: 700px;
-	margin: 0 auto;
-}*/
+.theclass {
+  font-family: Trebuchet MS, Courier New, Lucida Sans Typewriter, Verdana, sans-serif;
+}
 
+.loginn h2:hover {
+  color: #436EEE;
+  text-decoration: none;
+  transition: color 600ms;
+  -webkit-transition: color 600ms;
+}
+
+.loginn h2 {
+  font-family: Trebuchet MS, Courier New, Lucida Sans Typewriter, Verdana, sans-serif;
+}
 /*** login page ***/
 
-#lokin {
+/*#lokin {
   text-align: center;
   max-width: 250px;
   padding: 15px;
@@ -234,14 +255,14 @@ html, body {
 
 #lokin #pas {
   height: 25px;
-}
+}*/
 
 /*** sign_up page ***/
 
 #sainap {
   text-align: center;
   max-width: 250px;
-  padding: 15px;
+  /*padding: 15px;*/
   margin: 0 auto;
 }
 
@@ -249,52 +270,49 @@ html, body {
   height: 19px;
 }
 
+.sainapz h2 {
+  font-family: Trebuchet MS, Courier New, Lucida Sans Typewriter, Verdana, sans-serif;
+}
+
+.sainapblue {
+  width: 87%;
+}
+
+.sainaplinks {
+  text-align: left;
+}
+
 /*** edit page ***/
 
 #sainapedit {
   text-align: center;
   max-width: 250px;
-  padding: 15px;
+  /*padding: 15px;*/
   margin: 0 auto;
 }
  
 /*** Show page ***/
 
-.showpic {
-  padding-top: 50px;
+.showpagepic h4 {
+  font-family: Trebuchet MS, Courier New, Lucida Sans Typewriter, Verdana, sans-serif;
 }
-
-.bigshowpic {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-/*** img-responsive pics ***/
-
-/*.img-responsive {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}*/
 
 /*** new-comment page ***/
 
 #reviu {
   text-align: center;
   max-width: 250px;
-  padding: 15px;
+  /*padding: 15px;*/
   margin: 0 auto;
 }
 
-/*** all_comments page ***/
+/*** _comments page ***/
 
 .product-reviews {
   text-align: center;
 }
 
-body {
+/*body {
   background-color: #FFFFFF;
-}
+}*/
 

@@ -1,34 +1,32 @@
-<div class="container" id="lokin">
+<div class="container anchor loginz">
+<div class="loginn">
 <h2>Log in</h2>
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %> 
+      <div class="field form-group">
+        <%= f.label :email, class: "theclass" %><br />
+        <%= f.email_field :email, placeholder: "Email", class: "form-control theclass" %>
+      </div>
 
-  <div class="form-group" id="imail">
-    <%= f.label :email do %><!--br /-->
-    <%= f.email_field :email,placeholder: "Email address", class: "form-control"  %>
-    <% end %>
-  </div>
+      <div class="field form-group">
+        <%= f.label :password, class: "theclass" %><br />
+        <%= f.password_field :password, placeholder: "Your password", class: "form-control theclass" %>
+      </div>
 
-  <div class="form-group" id="pas">
-    <%= f.label :password do %><!--br /-->
-    <%= f.password_field :password, placeholder: "Password", class: "form-control" %>
-    <% end %>
-  </div>
-
-  <% if devise_mapping.rememberable? -%>
-    <div class="checkbox">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
-    </div>
-  <% end -%>
+      <% if devise_mapping.rememberable? -%>
+        <div class="field">
+          <%= f.check_box :remember_me %>
+          <%= f.label :remember_me, class: "theclass" %>
+        </div>
+      <% end -%>
 
   <div class="actions">
-    <%= f.submit value: "Log in", class: "btn btn-lg btn-primary btn-block" %>
+    <%= f.submit "Log in", class: "theclass" %>
   </div>
-
 <% end %>
-</div>
+
+<div class="renderone">
 <%= render "devise/shared/links" %>
-
-
-
+</div>
+</div>
+</div><!-- end container -->
