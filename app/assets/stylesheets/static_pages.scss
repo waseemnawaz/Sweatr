@@ -316,3 +316,8 @@ html, body {
   background-color: #FFFFFF;
 }*/
 
+@media (max-width: 480px) {
+  #faque  {
+    background-attachment: scroll;
+  }
+}

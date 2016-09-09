@@ -7,12 +7,24 @@ class ProductsController < ApplicationController
     #@products = Product.all
     #@products = Product.limit(3)
     #search_term = params[:q]
+    
+    #if params[:q]
+      #search_term = params[:q]
+      #@products = Product.where("name LIKE ?", "%#{search_term}%")
+    #else
+      #@products = Product.all
+    #end
     if params[:q]
-      search_term = params[:q]
-      @products = Product.where("name LIKE ?", "%#{search_term}%")
-    else
+    search_term = params[:q]
+     if Rails.env.production?
+        @products = Product.where("name iLIKE ?", "%#{search_term}%")
+      else
+        @products = Product.where("name LIKE ?", "%#{search_term}%")
+      end
+     else
       @products = Product.all
     end
+
   end
 
   # GET /products/1
