@@ -61,3 +61,5 @@ gem 'devise'
 gem 'cancancan'
 
 gem 'will_paginate', '~> 3.0.6'
+
+gem 'stripe'
