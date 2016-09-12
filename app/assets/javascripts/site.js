@@ -6,4 +6,11 @@ $(document).on('ready page:load', function(){
         return $(this).attr('data-score');
       }
     });
+    //tooltips
+    $(function () {
+   		$('#tool').tooltip();
+ 		});
+ 		$(function () {
+   		$('#toolpic').tooltip();
+ 		});
 });
