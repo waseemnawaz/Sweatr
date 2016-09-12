@@ -1,13 +1,14 @@
 <div class="container anchor showpagepic">
 	<p id="notice"><%= notice %></p>
-		<h4>
+		<h4 class="titulo">
   		<%= @product.name %>
 		</h4>
 	<%= image_tag @product.image_url, class: "img-responsive bigshowpic" %>
 	<div class="row">
 		<div class="col-md-3">
 			<h4>
-  			<%= @product.price %>
+				<span class="glyphicon glyphicon-usd" aria-hidden="true"><!--strong>Price: </strong></span-->
+  			<%= @product.price.to_d/100 %>
 			</h4>
 		</div>
 		<div class="col-md-3">
