@@ -38,7 +38,7 @@
               <%= submit_tag("Search", class: "btn btn-default") %>
             </li>
               <% end %>
-            <li>
+            <li class="logina">
               <% if user_signed_in? %>
                 <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
               <% else %>

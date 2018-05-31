@@ -4,6 +4,10 @@
 
 /*** Navigation bar typography ***/
 
+li.logina {
+  display:none;
+}
+
 .navbar-inverse .navbar-nav>li>a:hover {
   color: #436EEE;
 }
