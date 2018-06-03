@@ -3,6 +3,11 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 /*** Navigation bar typography ***/
+.copyright a {
+  margin-left: 0.5em;
+  text-decoration: none;
+  color: #333;
+}
 
 li.logina {
   display:none;
